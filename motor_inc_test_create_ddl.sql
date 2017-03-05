@@ -5,7 +5,7 @@
 CREATE TABLE claim
 (
   claim_id integer NOT NULL,
-  c character varying(255),
+  CLAIM_SHORT_DESC character varying(255),
   claim_date date,
   create_date date NOT NULL,
   update_date date NOT NULL,
@@ -72,6 +72,7 @@ CREATE TABLE "Line_Fact"
   "LINE_STATUS" integer,
   "LINE_ERROR_CODE" integer,
   "LINE_VALUE" numeric NOT NULL,
+  "CLAIM_COSTS" numeric,
   "VALID_LINE" integer,
   "CREATE_DATE" date NOT NULL,
   "UPDATE_DATE" date NOT NULL,
